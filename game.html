@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Game Area | HTML5 Canvas Javascript</title>
+</head>
+<body style="background-image: url(files/bg.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="game-container">
+                    <canvas width="500px" height="500px" id="myCanvas"></canvas>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="score"><p class="score-text">Score : </p><a id="score-text"></a></div>
+                <div class="music-div">
+                    <button class="music-btn" onclick="music()"><img src="files/music.svg" style="width: 26px; " alt="arrow right"> </button>
+                    <div class="row">
+                        <div class="col-sm-2"><button onclick="faceImage()" class="music-btn" style="height: 105px;" ><img src="files/face.png" style="width: 56px; " alt="arrow right"> </button></div>
+                        <div class="col-sm-2"><button onclick="face1()" style="margin-left: 100px;" class="music-btn" ><img src="files/face1.png" style="width: 56px; " alt="arrow right"> </button></div>
+                        <div class="col-sm-2"><button onclick="face2()" style="margin-left: 200px;" class="music-btn" ><img src="files/pacman.png" style="width: 56px; " alt="arrow right"> </button></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-2"><button onclick="fruitImage()" class="music-btn" style="height: 105px; width: 115px;" ><img src="files/fruit.png" style="width: 36px; " alt="arrow right"> </button></div>
+                        <div class="col-sm-2"><button onclick="fruit1()" style="margin-left: 100px;" class="music-btn" ><img src="files/fruit1.png" style="width: 56px; " alt="arrow right"> </button></div>
+                        <div class="col-sm-2"><button onclick="fruit2()" style="margin-left: 200px;" class="music-btn" ><img src="files/fruit2.png" style="width: 56px; " alt="arrow right"> </button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="bootstrap.min.js"></script>
+<script src="script.js"></script>
+</html>
